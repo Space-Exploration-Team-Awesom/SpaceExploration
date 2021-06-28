@@ -33,3 +33,7 @@ Team Awesome Project
 - GIFS provided by https://giphy.com
 - Mars, Earth,  Neptune, Uranus, Pluto Planet Image provided by https://freepnglogos.com
 - Venus, Jupiter, Saturn, Mercury provided by https://stickpng.com
+### cite for quiz questions
+- Easy Planet Jupiter Trivia Quiz Questions for Kids (https://www.triviaplaying.com/562-planet-jupiter-science-trivia.htm)
+- Easy Saturn Trivia quiz questions for kids (https://www.triviaplaying.com/565-saturn-planet-trivia.htm)
+- Solar System (https://en.wikipedia.org/wiki/Solar_System)

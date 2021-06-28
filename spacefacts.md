@@ -109,3 +109,125 @@ Which of the following is one of Pluto's five moons?
 2. Minotaur
 3. Cerberus
 4. Lamia
+
+
+<!-- -------------------------- kyles addition below-------------- -->
+
+# Jupiter
+Jupitar named after the Roman god, the king of gods. This is due to the observed size. Primarily composed of hydrogen and a quarter made of helium, Jupitar has 2 and a half times the mass of all the other planets in our solar system combined. Jupitar does have rings around it, but its mostly known for its size. It is the fifth planet away from the Sun right before Saturn. Jupitar has 67 moons and has been visited seven times by spacecraft.
+
+Question 1 - 
+If Earth is the 3rd planet from the sun, how many planets away is Jupiter?
+1. 4th
+2. 6th
+3. 5th
+4. 2nd
+- 5th
+
+Question 2 - 
+Jupitar has __ and a half times the mass of all the other planets in the Solar System combined. Fill in the blank
+1. 1
+2. 2
+3. 3
+4. 5
+- 2
+
+Question 3 - 
+A quarter of Jupitars mass is helium, what is the other three quarters?
+1. Hydrogen
+2. Carbon Monoxide
+3. Nitrogen
+4. Neon
+- Hydrogen
+
+
+
+
+
+# Saturn
+Saturn, named after the Roman god of wealth and agriculture, took place in the naming of "Saturday" ("Saturns Day"). Mostly composed of iron-nickle and rock, Saturn is weighing in at 95 times the mass of earth. Wind speeds on Saturn can reach speeds of up to 1,100mph, not as high as Neptunes though. The most famous part of Saturn is the ring system. Composed of mostly ice particles with small rock debris and dust. There are 82 moons around Saturn and it is the sixth planet from the Sun.
+
+Question 1 - 
+If Earth is the 3rd planet from the sun, how many planets away is Saturn?
+1. 4th
+2. 6th
+3. 5th
+4. 2nd
+- 6th
+
+Question 2 - 
+Winds are pretty strong on Saturn. How strong are they?
+1. 910 mph
+2. 2600 mph
+3. 1100 mph
+4. 1600 mph
+- 1100 mph
+
+Question 3 - 
+Saturn is __ times more massive than earth. Fill in the blank
+1. 95
+2. 35
+3. 115
+4. 75
+- 95
+
+
+
+
+# Uranus
+Named after the greek god of the sky, Uranus has the fourth largest mass in the solar system. It is four times the phyisical size of Earth and weighs fourteen and half times the amount of Earth! Along with Neptune, Uranus is known as a "ice giant" and is the coldest planet in our solar system. Uranus does have rings, even though Saturn is the most famous for this Uranus's rings are still visible and colorful. There are also twentyseven moons around the planet!
+
+Question 1 -
+If Earth is the 3rd planet from the sun, how many planets away is Uranus?
+1. 6th
+2. 3rd
+3. 7th
+4. 5th
+- 7th
+
+Question 2 -
+Uranus is ___ times the physical size of Earth. fill in the blank
+1. 5
+2. 6
+3. 3
+4. 4
+- 4
+
+Question 3 -
+Uranus weighs ___ times the amount of Earth
+1. 4
+2. 20.5
+3. 1.5
+4. 14.5 -14.5
+- Uranus Info
+
+
+
+
+# Neptune
+Named after the Roman god of the sea, Neptune is not visible to the naked eye.. Like Jupitar and Saturn Neptunes atmosphere is composed primarily of hydrogen and helium. Neptune is the furthest planet (#8) from the sun in our solar system. Seventeen times the mass of Earth, Neptune is the 4th largest planet by diameter and the third most massive planet. Winds have been recored up to 1,200mph on Neptune!
+
+Question 1 -
+If Earth is the 3rd planet from the sun, how many planets away is Neptune?
+1. 9th
+2. 8th
+3. 7th
+4. 5th
+- 8th
+
+Question 2 -
+Neptune is the ___ - largest planet by diameter, and the __ -most-massive planet. Fill in the blank.
+1. 4th, 4th
+2. 3rd, 3rd
+3. 4th, 3rd
+4. 3rd, 4th
+- 4th, 3rd
+
+Question 3 -
+Neptune is __ times the mass of Earth. Fill in the blank.
+1. 16
+2. 17
+3. 15
+4. 14
+- 17
+

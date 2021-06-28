@@ -27,3 +27,6 @@ Team Awesome Project
 - Discussed in requirments
 ### Wireframe Model
 ![wireframe](/IMG/wireframe.png)
+
+
+### Sources

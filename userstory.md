@@ -66,7 +66,9 @@ As a developer, I want to keep track of the daily visits to gauge whether I shou
 As a user, I want a quiz and a form of a game so that I can test what I've learned.
 
 * “As a <role>, I want <goal> so that <benefit>”
+As a developer, I'd like to have to planets rotate, so that it feel more interactive? XD
 
 * “As a <role>, I want <goal> so that <benefit>”
+As a developer, I want to provide different themes so that makes our page more interesting and customized.
 
 * “As a <role>, I want <goal> so that <benefit>”

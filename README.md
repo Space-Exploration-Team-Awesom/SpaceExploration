@@ -30,3 +30,6 @@ Team Awesome Project
 
 
 ### Sources
+- GIFS provided by https://giphy.com
+- Mars, Earth,  Neptune, Uranus, Pluto Planet Image provided by https://freepnglogos.com
+- Venus, Jupiter, Saturn, Mercury provided by https://stickpng.com

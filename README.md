@@ -22,5 +22,8 @@ Team Awesome Project
 * This is also a good place to reflect on the tools and resources used and learned
 
 ### Domain Modelling
-
+![domain_model](/IMG/domainModel.png)
 ### Database Modelling
+- Discussed in requirments
+### Wireframe Model
+![wireframe](/IMG/wireframe.png)

@@ -11,7 +11,8 @@ const buttonElem = document.getElementById("button");
 let currentPlanet;
 
 // planet array
-let planetArray =[];
+let planetArray = [];
+let quizArray = [];
 
 // counter for questions answered correctly
 let correct = 0;
@@ -26,6 +27,14 @@ function Planet(name, img, info, quiz, answers) {
   this.quiz = quiz;
   this.answers = answers;
   planetArray.push(this);
+}
+
+// Quiz constructor for answers
+function Quiz(name, quiz, answer) {
+  this.name = name; // takes a planet name
+  this.quiz = quiz; // takes an array of quiz questions
+  this.answer = answer; // takes an array of answers
+  quizArray.push(this); // pushes planet and answers to array
 }
 
 // prototype function that renders a planet and info to the page
@@ -68,15 +77,48 @@ function handleButtonClick(event) {
     let pElem = document.createElement('p');
     pElem.textContent = currentPlanet.quiz[i];
     quizElem.appendChild(pElem);
-        
   }
+}
+
+function handleButtonClick2(event) {
+  quizElem.innerHTML = '';
+  let brElem = document.createElement('br');
+  for (let question of quizArray) {
+    if (currentPlanet.name === question.name) {
+      for (let i = 0; i < question.quiz.length; i++) {
+        let pElem = document.createElement('p');
+        pElem.textContent = question.quiz[i];
+        quizElem.appendChild(pElem);
+        console.log(question.answer);
+        let formElem = document.createElement('form')
+        for (let j = 0; j < question.answer[i].length; j++) {
+          console.log(question.answer[i][j]);
+          let answerElem = document.createElement('input');
+          let labelElem = document.createElement('label');
+          let brElem = document.createElement('br');
+          answerElem.type = 'radio';
+          labelElem.textContent = question.answer[i][j];
+          answerElem.name = i;
+          // let p2Elem = document.createElement('p');
+          // p2Elem.textContent = question.answer[i][j];
+          quizElem.appendChild(answerElem);
+          quizElem.appendChild(labelElem);
+          quizElem.appendChild(brElem);
+        }
+      }
+    }
+  }
+  let submitElem = document.createElement('button');
+  submitElem.textContent = 'Submit';
+  quizElem.appendChild(brElem);
+  quizElem.appendChild(submitElem);
 }
 
 // We need a function that when you click on a planet, it loads up the correct planet/info from the planet object array
 // add event listener
 mainElem.addEventListener('click', handleClick);
 
-buttonElem.addEventListener('click', handleButtonClick);
+buttonElem.addEventListener('click', handleButtonClick2);
 
 // We're going to need some quiz code for multiple choice and text input (using forms and buttons)
 
@@ -103,6 +145,12 @@ function createPlanet() {
   new Planet('Pluto','./IMG/Pluto.png', [ `Pluto is the ninth object from the Sun, and is called a dwarf planet instead of a planet. It is named after the Roman god of the underworld. Pluto is made of ice and rock and is relatively small; it is one-sixth the mass of the Moon and one-third its volume. Pluto is so far away that light from the Sun takes 5.5 hours to reach it! Pluto has five known moons: Charon, Styx, Nix, Kerberos, and Hydra.`],[ "We're going to need some quiz code for multiple choice and text input (using forms and buttons)"]);
 }
 
+function createQuiz() {
+  new Quiz('Mercury', ["Question 2: If Earth is the 3rd planet away from the Sun, what position is Mercury?", "Question 3: What astronomical body does Mercury most look like?"], [["a. 1st","b. 2nd","c. 4th","d. 5th"],["a. Venus","b. Earth","c. The Moon","d. Jupiter"]])
+  new Quiz('Venus',["Question 2: If Earth is the 3rd planet away from the Sun, what position is Venus?","Question 3: What other name is Venus known by?"],[["a. 1st","b. 2nd","c. 4th","d.5th"]["a. Nebula","b. The Morning Star","c. Jupiter","d. Charon"]])
+}
+
 createPlanet();
+createQuiz();
 //planetArray[0].renderPlanet();
 loadPlanet();

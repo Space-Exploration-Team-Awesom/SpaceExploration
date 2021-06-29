@@ -43,7 +43,7 @@ Dev.prototype.render = function(){
         bioElem.textContent = this.devArray[i].bio;
         //bioElem.className('dev-bio');
         devDiv.appendChild(bioElem);
-        console.log('prototype function');
+
     }
 }
 
@@ -59,4 +59,4 @@ function renderDevs(){
  new Dev('Tim', './IMG/devImg/Tim.jpg', 'Tim worked as an electrical engineer at Intel with a solid engineering background and collaboration skills. Currently working as a certified nursing assistant at Virginia Mason hospital. Excellent in listening and providing solutions to meet patients’ needs. Now with the engineering background, collaborative nature, and customer-oriented mindset, I will use software to meet clients’ needs. In the process of a certified program in Advanced Software Development in Full-Stack JavaScript.');
  new Dev('Peter', './IMG/devImg/Peter.jpeg', 'My name is Peter and I am an Army veteran who has experience in IT support. I have always been interested in coding, and decided to take the leap to find a job that will constantly challenge me and allow me to grow. When I"m not challenging myself to learn new things, you"ll find me spending time with my four kids, and reading books, such as Game of Thrones and the Witcher series.');
 
- renderDevs();
+renderDevs();

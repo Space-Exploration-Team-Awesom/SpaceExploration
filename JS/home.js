@@ -30,9 +30,10 @@ function storeUserInfo(name, age, planet) {
 function startingPlanet(){
   let selectElem = document.getElementById('planet');
   let planet = JSON.stringify(selectElem.value);
-  if (planet === 'random'){
+  if (selectElem.value === 'random'){
+    console.log('here')
     let index = randomIndex();
-    planet = planets[index];
+    planet = JSON.stringify(planets[index]);
   } 
   
   localStorage.setItem('planet', planet);

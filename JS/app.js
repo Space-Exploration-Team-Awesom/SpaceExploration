@@ -8,6 +8,8 @@ const quizElem = document.getElementById('quiz');
 const mainElem = document.getElementById('main');
 const buttonElem = document.getElementById("button");
 
+let submitElem;
+
 let currentPlanet;
 
 // planet array
@@ -30,10 +32,11 @@ function Planet(name, img, info, quiz, answers) {
 }
 
 // Quiz constructor for answers
-function Quiz(name, quiz, answer) {
+function Quiz(name, quiz, answer, correctAnswer) {
   this.name = name; // takes a planet name
   this.quiz = quiz; // takes an array of quiz questions
   this.answer = answer; // takes an array of answers
+  this.correctAnswer = correctAnswer; // an array of correct answers
   quizArray.push(this); // pushes planet and answers to array
 }
 
@@ -73,15 +76,6 @@ function handleClick(event) {
 // function for button click to quiz
 function handleButtonClick(event) {
   quizElem.innerHTML = '';
-  for (let i = 0; i < currentPlanet.quiz.length; i++) {
-    let pElem = document.createElement('p');
-    pElem.textContent = currentPlanet.quiz[i];
-    quizElem.appendChild(pElem);
-  }
-}
-
-function handleButtonClick2(event) {
-  quizElem.innerHTML = '';
   let brElem = document.createElement('br');
   for (let question of quizArray) {
     if (currentPlanet.name === question.name) {
@@ -97,10 +91,10 @@ function handleButtonClick2(event) {
           let labelElem = document.createElement('label');
           let brElem = document.createElement('br');
           answerElem.type = 'radio';
+          answerElem.id = question.answer[i][j];
           labelElem.textContent = question.answer[i][j];
+          labelElem.for = question.answer[i][j];
           answerElem.name = i;
-          // let p2Elem = document.createElement('p');
-          // p2Elem.textContent = question.answer[i][j];
           quizElem.appendChild(answerElem);
           quizElem.appendChild(labelElem);
           quizElem.appendChild(brElem);
@@ -108,17 +102,47 @@ function handleButtonClick2(event) {
       }
     }
   }
-  let submitElem = document.createElement('button');
+  submitElem = document.createElement('button');
   submitElem.textContent = 'Submit';
   quizElem.appendChild(brElem);
   quizElem.appendChild(submitElem);
+  submitElem.setAttribute('id','submitQuiz');
+  submitElem.addEventListener('click', handleQuizSubmitClick);
+}
+
+// read the values that were submitted with the form and compare them to our correct answer array
+function handleQuizSubmitClick() {
+  let submitQuizElem = document.getElementById('submitQuiz');
+  alert('show answer');
+  // cycle through all the form inputs on the screen and compare the value of the selected to the answer array
+    // grab the form inputs
+    let answers = document.querySelectorAll('input:checked');
+    console.log(answers);
+    // compare them to the answer array
+    for (let question of quizArray) {
+      if (currentPlanet.name === question.name) {
+        for (let i = 0; i < 1; i++) {
+          console.log(question.correctAnswer[i]);
+          for (let j = 0; j < answers.length; j++) {
+            console.log(answers[j]);
+            if (answers[j].id === question.correctAnswer[j]) {
+              console.log('correct: ' + answers[j].id);
+            } else {
+              console.log('wrong: ' + answers[j].id);
+            }
+          }
+        }
+      }
+    }
 }
 
 // We need a function that when you click on a planet, it loads up the correct planet/info from the planet object array
 // add event listener
 mainElem.addEventListener('click', handleClick);
 
-buttonElem.addEventListener('click', handleButtonClick2);
+buttonElem.addEventListener('click', handleButtonClick);
+
+
 
 // We're going to need some quiz code for multiple choice and text input (using forms and buttons)
 
@@ -146,8 +170,8 @@ function createPlanet() {
 }
 
 function createQuiz() {
-  new Quiz('Mercury', ["Question 2: If Earth is the 3rd planet away from the Sun, what position is Mercury?", "Question 3: What astronomical body does Mercury most look like?"], [["a. 1st","b. 2nd","c. 4th","d. 5th"],["a. Venus","b. Earth","c. The Moon","d. Jupiter"]])
-  new Quiz('Venus',["Question 2: If Earth is the 3rd planet away from the Sun, what position is Venus?","Question 3: What other name is Venus known by?"],[["a. 1st","b. 2nd","c. 4th","d.5th"]["a. Nebula","b. The Morning Star","c. Jupiter","d. Charon"]])
+  new Quiz('Mercury', ["Question 2: If Earth is the 3rd planet away from the Sun, what position is Mercury?", "Question 3: What astronomical body does Mercury most look like?"], [["a. 1st","b. 2nd","c. 4th","d. 5th"],["a. Venus","b. Earth","c. The Moon","d. Jupiter"]], ["a. 1st", "c. The Moon"])
+  new Quiz('Venus',["Question 2: If Earth is the 3rd planet away from the Sun, what position is Venus?","Question 3: What other name is Venus known by?"],[["a. 1st","b. 2nd","c. 4th","d.5th"]["a. Nebula","b. The Morning Star","c. Jupiter","d. Charon"]], ["b. 2nd", "b. The Morning Star"])
 }
 
 createPlanet();

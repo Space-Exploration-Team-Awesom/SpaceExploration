@@ -43,6 +43,7 @@ Dev.prototype.render = function(){
         bioElem.textContent = this.devArray[i].bio;
         //bioElem.className('dev-bio');
         devDiv.appendChild(bioElem);
+
     }
 }
 

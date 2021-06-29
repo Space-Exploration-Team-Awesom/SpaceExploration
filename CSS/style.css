@@ -1,4 +1,9 @@
+
+img {
+  width: 300px;
+
 img:nth-child(3){
     width: 10%;
     height: 10%;
+
 }

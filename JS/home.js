@@ -29,7 +29,7 @@ function storeUserInfo(name, age, planet) {
 
 function startingPlanet(){
   let selectElem = document.getElementById('planet');
-  let planet = selectElem.value;
+  let planet = JSON.stringify(selectElem.value);
   if (planet === 'random'){
     let index = randomIndex();
     planet = planets[index];

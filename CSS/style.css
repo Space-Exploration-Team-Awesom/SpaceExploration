@@ -5,35 +5,27 @@ body {
 
 header{
   display:flex;
-  justify-content: center;
+  justify-content:space-between;
   align-items: flex-start;
+  background-color: black;
+
 }
 
-header nav{
-  
-  
-}
 
 header ul{
   display:flex;
-  width:500px;
-  height:60px;
+  width:150%;
+  height:60%;
   justify-content: space-evenly;
   padding-inline-start: 0%;
 }
-header ul li:hover{
-  display:inline-block;
-  width:100px;
-  height:50px;
-  color:white;
-  
-
-}
 
 header ul li a{
+  display:inline;
+   color:white;
   font-family: 'Monoton', cursive;
-  font-size: 1em;
-  
+  font-size: 1.2em;
+
 }
 
 
@@ -77,6 +69,7 @@ main{
   color:white;
   margin-left:70%;
   margin-top:1.5%;
+  font-size: 1.3em;
 }
 
 #button{
@@ -99,12 +92,19 @@ main{
   background-color: rgb(103, 3, 197);
   color: white;
   border-color:orange;
+
+#quiz-results{
+  display:block;
+  color:white;
+  margin-left:70%;
+  margin-top:1.5%;
+  font-size: 1.3em;
 }
 
 #planetImg{
   float:left;
-  width:750px;
-  height:750px;
+  width:60%;
+  height:90%;
   object-fit: contain;
   -webkit-shape-outside:circle();
   /* shape-outside:circle (); */
@@ -119,7 +119,7 @@ main ul{
   display:flex;
   justify-content: space-between;
   color:white;
-  margin-top:42%;
+  margin-top:23%;
   margin-bottom:2%;
   padding-inline-start: 5%px;
   padding-inline-end: 5%;
@@ -136,4 +136,30 @@ main ul img{
 
 #Mercury{
   background: url(/GIFS/mercury.gif) no repeat;
+}
+
+
+
+/* Use these too style radio buttons!*/
+input[class='radioButton']:after {
+  
+}
+
+input[class='radioButton']:checked:after {
+  
+}
+
+.answerText {
+  color: aquamarine;
+}
+.questionText {
+  color: greenyellow;
+}
+/* open quiz here */
+#button  {
+
+}
+/* submit */
+#submitQuiz {
+  
 }

@@ -5,6 +5,7 @@ const imgElem = document.getElementById('planetImg');
 const infoElem = document.getElementById('planetInfo');
 const planetNameElem = document.getElementById('planetName');
 const quizElem = document.getElementById('quiz');
+const quizResultsElem = document.getElementById('quiz-results');
 const mainElem = document.getElementById('main');
 const buttonElem = document.getElementById("button");
 
@@ -36,6 +37,7 @@ function Quiz(name, quiz, answer, correctAnswer) {
   this.quiz = quiz; // takes an array of quiz questions
   this.answer = answer; // takes an array of answers
   this.correctAnswer = correctAnswer; // an array of correct answers
+
   quizArray.push(this); // pushes planet and answers to array
 }
 
@@ -45,6 +47,7 @@ Planet.prototype.renderPlanet = function() {
   imgElem.src = this.img;
   infoElem.textContent = this.info;
   quizElem.innerHTML = '';
+  quizResultsElem.innerHTML = '';
 }
 
 // loading function 
@@ -81,6 +84,7 @@ function handleButtonClick(event) {
       for (let i = 0; i < question.quiz.length; i++) {
         let pElem = document.createElement('p');
         pElem.textContent = question.quiz[i];
+        pElem.className = 'questionText';
         quizElem.appendChild(pElem);
         console.log(question.answer);
         let formElem = document.createElement('form')
@@ -90,6 +94,8 @@ function handleButtonClick(event) {
           let labelElem = document.createElement('label');
           let brElem = document.createElement('br');
           answerElem.type = 'radio';
+          answerElem.className = 'radioButton';
+          labelElem.className = 'answerText';
           answerElem.id = question.answer[i][j];
           labelElem.textContent = question.answer[i][j];
           labelElem.for = question.answer[i][j];
@@ -118,7 +124,8 @@ function handleQuizSubmitClick() {
     let answers = document.querySelectorAll('input:checked');
     console.log(answers);
     // compare them to the answer array
-    
+    let resultsDiv = document.getElementById('quiz-results');
+    resultsDiv.innerHTML = "";
     for (let question of quizArray) {
       if (currentPlanet.name === question.name) {
         for (let i = 0; i < answers.length; i++) {
@@ -126,13 +133,14 @@ function handleQuizSubmitClick() {
           if (answers[i].id === question.correctAnswer[i]) {
             let resultsElem = document.createElement('p');
             resultsElem.textContent = `Question ${i+1} is correct`
-            quizElem.appendChild(resultsElem);
+            // quizElem.appendChild(resultsElem);
+            resultsDiv.appendChild(resultsElem);
             
           } else {
             let resultsElem = document.createElement('p');
             resultsElem.textContent = `Question ${i+1} is wrong and the answer is ${question.correctAnswer[i]}`
-            quizElem.appendChild(resultsElem);
-            
+            // quizElem.appendChild(resultsElem);
+            resultsDiv.appendChild(resultsElem);
           }
         }
       }

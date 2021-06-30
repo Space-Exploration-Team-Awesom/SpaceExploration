@@ -175,8 +175,13 @@ function createPlanet() {
 
 function createQuiz() {
   new Quiz('Mercury', ["Question 2: If Earth is the 3rd planet away from the Sun, what position is Mercury?", "Question 3: What astronomical body does Mercury most look like?"], [["a. 1st","b. 2nd","c. 4th","d. 5th"],["a. Venus","b. Earth","c. The Moon","d. Jupiter"]], ["a. 1st", "c. The Moon"])
-  new Quiz('Venus',["Question 2: If Earth is the 3rd planet away from the Sun, what position is Venus?","Question 3: What other name is Venus known by?"],[["a. 1st","b. 2nd","c. 4th","d.5th"]["a. Nebula","b. The Morning Star","c. Jupiter","d. Charon"]], ["b. 2nd", "b. The Morning Star"])
+  new Quiz('Venus',["Question 2: If Earth is the 3rd planet away from the Sun, what position is Venus?","Question 3: What other name is Venus known by?"],[["a. 1st","b. 2nd","c. 4th","d.5th"],["a. Nebula","b. The Morning Star","c. Jupiter","d. Charon"]], ["b. 2nd", "b. The Morning Star"])
+  new Quiz('Earth', ["Question 1: How many human live on Earth?","Question 2: If Mercury is the 1st planet away from the Sun, what position is Earth?","Question 3: Which planet is the densest in the solar system?"],[["a. 6 billion","b. 3 billion","c. 5 billion","d. 8 billion"],["a. 2nd","b. 3rd","c. 4th","d. 5th"],["a. Venus","b. Jupiter","c. Earth","d. Mars"]])
 }
+
+
+
+
 
 createPlanet();
 createQuiz();

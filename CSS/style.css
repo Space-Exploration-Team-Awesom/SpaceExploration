@@ -64,6 +64,7 @@ main{
   margin-left:70%;
   margin-top:1.5%;
 }
+
 #quiz{
   display:block;
   color:white;
@@ -71,27 +72,6 @@ main{
   margin-top:1.5%;
   font-size: 1.3em;
 }
-
-#button{
-  padding: 15px;
-  font-size: 1.3em;
-  border-width: 5px;
-  border-radius: 15px;
-  /* background-color: rgb(197, 107, 3); */
-  background-color: rgb(103, 3, 197);
-  color: white;
-  border-color:orange;
-}
-
-#submitQuiz{
-  padding: 15px;
-  font-size: 1.3em;
-  border-width: 5px;
-  border-radius: 15px;
-  /* background-color: rgb(197, 107, 3); */
-  background-color: rgb(103, 3, 197);
-  color: white;
-  border-color:orange;
 
 #quiz-results{
   display:block;
@@ -108,13 +88,13 @@ main{
   object-fit: contain;
   -webkit-shape-outside:circle();
   /* shape-outside:circle (); */
-  
 }
 
 #planetInfo{
   font-size:1.3em;
- 
+  font-family: 'Maven Pro', sans-serif;
 }
+
 main ul{
   display:flex;
   justify-content: space-between;
@@ -141,8 +121,13 @@ main ul img{
 
 
 /* Use these too style radio buttons!*/
+input[class='radioButton']{
+  transform: scale(2);
+  margin: 10px;
+}
+
 input[class='radioButton']:after {
-  
+
 }
 
 input[class='radioButton']:checked:after {
@@ -151,15 +136,42 @@ input[class='radioButton']:checked:after {
 
 .answerText {
   color: aquamarine;
+  font-family: 'Maven Pro', sans-serif;
+  margin-left: 15px;
+  font-weight: bold;
 }
 .questionText {
   color: greenyellow;
+  font-weight: bold;
+  font-family: 'Maven Pro', sans-serif;
 }
-/* open quiz here */
-#button  {
 
+#quiz-results{
+  color: greenyellow;
+  font-weight: bold;
+  font-family: 'Maven Pro', sans-serif;
 }
-/* submit */
-#submitQuiz {
-  
+
+#button{
+  padding: 15px;
+  font-size: 25px;
+  border-width: 5px;
+  border-radius: 15px;
+  /* background-color: rgb(197, 107, 3); */
+  background-color: rgb(103, 3, 197);
+  color: white;
+  border-color:orange;
+  font-family: 'Maven Pro', sans-serif;
+}
+
+#submitQuiz{
+  padding: 15px;
+  font-size: 25px;
+  border-width: 5px;
+  border-radius: 15px;
+  /* background-color: rgb(197, 107, 3); */
+  background-color: rgb(103, 3, 197);
+  color: white;
+  border-color:orange;
+  font-family: 'Maven Pro', sans-serif;
 }

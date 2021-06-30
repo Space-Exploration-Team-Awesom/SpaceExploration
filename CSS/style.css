@@ -79,6 +79,25 @@ main{
   margin-top:1.5%;
 }
 
+#button{
+  padding: 15px;
+  font-size: 1.3em;
+  border-width: 1px;
+  border-radius: 15px;
+  /* background-color: rgb(197, 107, 3); */
+  background-color: rgb(103, 3, 197);
+  color: white;
+}
+
+#submitQuiz{
+  padding: 15px;
+  font-size: 1.3em;
+  border-width: 1px;
+  border-radius: 15px;
+  /* background-color: rgb(197, 107, 3); */
+  background-color: rgb(103, 3, 197);
+  color: white;
+}
 
 #planetImg{
   float:left;

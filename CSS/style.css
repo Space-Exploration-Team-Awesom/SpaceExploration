@@ -94,6 +94,7 @@ main{
 #planetInfo{
   font-size:1.3em;
   font-family: 'Maven Pro', sans-serif;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   /* line-height: 1.4em; */
 }
 
@@ -150,33 +151,53 @@ main ul img{
 
 
 /* Use these too style radio buttons!*/
-input[class='radioButton']{
-  transform: scale(2);
-  margin: 10px;
-}
 
 input[class='radioButton']:after {
-
+  width: 20px;
+  height: 20px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px; 
+  position: relative;
+  background-color: rgb(103, 3, 197);
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid orange;
 }
 
 input[class='radioButton']:checked:after {
-  
+   width: 20px;
+  height: 20px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px; 
+  position: relative;
+  background-color: #ffa500;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid rgb(103, 3, 197);
 }
 
 .answerText {
-  color: aquamarine;
+  color: orange;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   font-family: 'Maven Pro', sans-serif;
   margin-left: 15px;
   font-weight: bold;
+  line-height: 1.5em;
 }
 .questionText {
-  color: greenyellow;
+  color: orange;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   font-weight: bold;
   font-family: 'Maven Pro', sans-serif;
 }
 
 #quiz-results{
-  color: greenyellow;
+  color: orange;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   font-weight: bold;
   font-family: 'Maven Pro', sans-serif;
 }

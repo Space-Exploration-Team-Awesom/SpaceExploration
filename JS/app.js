@@ -70,6 +70,7 @@ function loadPlanet() {
   }
 }
 
+
 // function to handle click on planet
 function handleClick(event) {
   let planet = event.target.id;
@@ -142,6 +143,9 @@ function handleQuizSubmitClick() {
             resultsElem.textContent = `Question ${i+1} is correct`
             // quizElem.appendChild(resultsElem);
             resultsDiv.appendChild(resultsElem);
+            correct++;
+            let currentScore = JSON.stringify(correct);
+            localStorage.setItem('currentScore', currentScore);
             
           } else {
             let resultsElem = document.createElement('p');
@@ -149,7 +153,12 @@ function handleQuizSubmitClick() {
             // quizElem.appendChild(resultsElem);
             resultsDiv.appendChild(resultsElem);
           }
+          
         }
+        let score = localStorage.getItem('currentScore');
+          let scoreElem = document.createElement('p');
+          scoreElem.textContent = `Your current score is ${score}!`;
+          resultsDiv.appendChild(scoreElem);
       }
     }
 }

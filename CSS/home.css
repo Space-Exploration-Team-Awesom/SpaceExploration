@@ -11,11 +11,55 @@ body {
   align-items: center;
   background-image: url(/IMG/background\ 1.png);
   background-size:cover;
-  font-family: 'Monoton', cursive;
   font-size: 1em;
   color:white;
 }
+ header h1{
+  font-family: 'Monoton', cursive;
+  font-size: 5em;
+  margin-top:3%;
+  background-image: 
+    linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;  
+  animation: move 120s linear infinite;
+  
+}
+@keyframes move {
+	to {
+		background-position: 4500vh;
+	}
+}
+header nav{
+  text-align: center;
+}
 
+header nav a{
+  display:inline-flex;
+  padding-right:5%;
+  padding-left:5%;
+  font-size:2em;
+  font-family: 'Monoton', cursive;
+  color:white;
+  margin-top:2%;
+  margin-bottom:2%;
+}
+#intro{
+  display:flex;
+  justify-content:center;
+  
+
+}
+#textContent{
+  text-align: center;
+  border:teal solid 5px;
+  border-radius:10px;
+  width:40%;
+  height:auto;
+  font-family: 'Montserrat', sans-serif;
+  padding:1%;
+}
+ 
 .box {
   position: relative;
   z-index: -1;
@@ -56,13 +100,26 @@ body {
   object-fit: cover;
 }
 
-#input {
-  position: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 45%;
-}
 
+#input {
+    width:250px;
+  background-color: gray;
+  opacity:0.7;
+  border-radius: 20px;
+  opacity:0.7;
+  background: gray;
+  padding: 3em;
+  height: 220px;
+  border-radius: 20px;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+  box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+
+  }
+  
+  
 #starter{
   margin-left: 45%;
 }

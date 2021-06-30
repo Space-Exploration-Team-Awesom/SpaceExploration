@@ -57,6 +57,7 @@ main{
    /* background-color: white; */
    width:49%;
    height: 500px;
+   margin-bottom: 10px;
   
 }  
 
@@ -118,7 +119,29 @@ main ul img{
   float:inherit;
 }
 
+#planetButtons {
+  position: relative;
+  bottom: -450px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 30px auto;
+}
 
+#planetButtons a {
+  width: 100px;
+  height: 80px;
+  
+}
+
+#planetButtons img {
+  width: 35px;
+  height: 35px;
+  
+}
+#planetButtons p {
+  margin: 0px;
+  
+}
 
 #Mercury{
   background: url(/GIFS/mercury.gif) no repeat;

@@ -3,24 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="./CSS/reset.css">
   <link rel="stylesheet" href="./CSS/home.css">
   <title>Space Exploration</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Monoton&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    </style>
 </head>
 <body>
   <header>
-    <h1>Home Page</h1>
-    <nav>
+    <h1>Space Exploration</h1>
+      <nav>
       <a href="about.html">About Us</a>
       <a href="http://worldwidetelescope.org/webclient/" title="Click Here to Learn Beyond Our Solar System">Learn More</a>
-
     </nav>
   </header>
 
   <main>
     <article id="intro">
-      <p>Welcome to the Space Exploration page – a place to play games and learn about the solar system! We have 9 planets here to explore and you can learn about them simply by choosing a starting planet and then clicking their icons. Also, don’t forget to try out the fun quiz after each planet. What are you waiting for? Let’s go!</p>
+      <p id="textContent">Welcome to the Space Exploration page – a place to play games and learn about the solar system! We have 9 planets here to explore and you can learn about them simply by choosing a starting planet and then clicking their icons. Also, don’t forget to try out the fun quiz after each planet. What are you waiting for? Let’s go!</p>
     </article>
     <div class="box">
         <span style="--i:1;"><img src="./IMG/Mercury.png"></span>
@@ -37,7 +40,7 @@
     <div id="input">
       <form id="userInfo">
         <label>Name</label><br>
-        <input name="name" type="text"><br>
+        <input name="name" type="text" class="name"><br>
         <label>Age</label><br>
         <input name="age" type="number"><br>
         <label>Your Favorite Planet</label><br>

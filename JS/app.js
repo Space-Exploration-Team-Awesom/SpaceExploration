@@ -181,11 +181,8 @@ function createQuiz() {
   new Quiz('Jupiter',["Question 1: If Earth is the 3rd planet from the sun, how many planets away is Jupiter?","Question 2: Jupiter has ____ and a half times the mass of all the other planets in the Solar System combined.","Question 3: A quarter of Jupiter's mass is helium, what is the other three quarters?"],[["a. 4th","b. 6th","c. 5th","d. 2nd"],["a. 1","b. 2","c. 3","d. 5",],["a. Hydrogen","b. Carbon Monoxide","c. Nitrogen","d. Neon"]],["c. 5th","b. 2","a. Hydrogen"]);
   new Quiz('Saturn',["Question 1: If Earth is the 3rd planet from the sun, how many planets away is Saturn?","Question 2: Winds are pretty strong on Saturn. How strong are they?","Question 3: Saturn is ____ times more massive than earth."],[["a. 4th","b. 6th","c. 5th","d. 2nd"],["a. 910 mph","b. 2600 mph","c. 1100 mph","d. 1600 mph"],["a. 95","b. 35","c. 115","d. 75"]],["b. 6th","c. 1100 mph","a. 95"]);
   new Quiz('Uranus',["Question 1: If Earth is the 3rd planet from the sun, how many planets away is Uranus?","Question 2: Uranus is ___ times the physical size of Earth.","Question 3: Uranus weighs ___ times the amount of Earth."],[["a. 6th","b. 3rd","c. 7th","d. 5th"],["a. 5","b. 6","c. 3","d. 4"],["a. 4","b. 20.5","c. 1.5","d. 14.5"]],["c. 7th","d. 4","d. 14.5"]);
-  new Quiz('Neptune',[],[[],[],[]],[]);
+  new Quiz('Neptune',["Question 1: If Earth is the 3rd planet from the sun, how many planets away is Neptune?","Question 2: Neptune is the ___ - largest planet by diameter, and the __ -most-massive planet.","Question 3: Neptune is __ times the mass of Earth."],[["a. 9th","b. 8th","c. 7th","d. 5th"],["a. 4th, 4th","b. 3rd, 3rd","c. 4th, 3rd","d. 3rd, 4th"],["a. 16","b. 17","c. 15","d. 14"]],["b. 8th","c. 4th, 3rd","b. 17"]);
 }
-
-
-
 
 
 

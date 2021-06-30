@@ -181,28 +181,25 @@ Saturn is __ times more massive than earth. Fill in the blank
 # Uranus
 Named after the greek god of the sky, Uranus has the fourth largest mass in the solar system. It is four times the phyisical size of Earth and weighs fourteen and half times the amount of Earth! Along with Neptune, Uranus is known as a "ice giant" and is the coldest planet in our solar system. Uranus does have rings, even though Saturn is the most famous for this Uranus's rings are still visible and colorful. There are also twentyseven moons around the planet!
 
-Question 1 -
-If Earth is the 3rd planet from the sun, how many planets away is Uranus?
-1. 6th
-2. 3rd
-3. 7th
-4. 5th
+"Question 1: If Earth is the 3rd planet from the sun, how many planets away is Uranus?",
+"a. 6th",
+"b. 3rd",
+"c. 7th",
+"d. 5th"
 - 7th
 
-Question 2 -
-Uranus is ___ times the physical size of Earth. fill in the blank
-1. 5
-2. 6
-3. 3
-4. 4
+"Question 2: Uranus is ___ times the physical size of Earth.",
+"a. 5",
+"b. 6",
+"c. 3"
+"d. 4",
 - 4
 
-Question 3 -
-Uranus weighs ___ times the amount of Earth
-1. 4
-2. 20.5
-3. 1.5
-4. 14.5 -14.5
+"Question 3: Uranus weighs ___ times the amount of Earth."
+a. 4
+b. 20.5
+c. 1.5
+d. 14.5 -14.5
 - Uranus Info
 
 

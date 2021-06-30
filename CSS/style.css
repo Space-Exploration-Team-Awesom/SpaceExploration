@@ -50,12 +50,15 @@ main{
 	}
 }
 
+#planetInfo{
+  font-family: 'Montserrat', sans-serif;
+}
+
 #planetDiv{
   position: absolute;
   left:20em;
    color:rgb(255, 255, 255);
-   /* background-color: white; */
-   width:49%;
+     width:49%;
    height: 500px;
    margin-bottom: 10px;
   
@@ -88,29 +91,31 @@ main{
   height:90%;
   object-fit: contain;
   -webkit-shape-outside:circle();
-  /* shape-outside:circle (); */
+ 
 }
 
 #planetInfo{
   font-size:1.3em;
   font-family: 'Maven Pro', sans-serif;
+
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   /* line-height: 1.4em; */
+
 }
 
-/* wraps the planet and the planet info in a div with the id of body */
-body{
-  /* margin-bottom: 25px; */
-}
+
 
 main ul{
   display:flex;
   justify-content: space-between;
   color:white;
+  width:80%;
+  height:60%;
   margin-top:23%;
   margin-bottom:2%;
-  padding-inline-start: 5%px;
+  padding-inline-start: 5%;
   padding-inline-end: 5%;
+ 
 
 }
 
@@ -122,30 +127,49 @@ main ul img{
 
 #planetButtons {
   position: relative;
-  bottom: -450px;
+  /* bottom: -450px; */
   display: flex;
   justify-content: space-evenly;
-  margin: 30px auto;
+  margin-bottom: 10%;
+  
 }
 
 #planetButtons a {
+  text-align: center;
   width: 100px;
   height: 80px;
   
 }
 
 #planetButtons img {
-  width: 35px;
-  height: 35px;
+  width: 100%;
+  height: auto;
   
 }
+
+#planetButtons p{
+  background-color: black;
+}
 #planetButtons p {
-  margin: 0px;
+  font-family: 'Monoton', cursive;
+  border: black solid 2px;
+  border-radius: 10px;
+  background-color: black;
+  color: aquamarine;
+  /* background-image: 
+  linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;  
+  animation: move 600s linear infinite; */
   
 }
 
 #Mercury{
   background: url(/GIFS/mercury.gif) no repeat;
+}
+
+#venus{
+  
 }
 
 

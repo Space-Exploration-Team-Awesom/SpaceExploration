@@ -93,6 +93,12 @@ main{
 #planetInfo{
   font-size:1.3em;
   font-family: 'Maven Pro', sans-serif;
+  /* line-height: 1.4em; */
+}
+
+/* wraps the planet and the planet info in a div with the id of body */
+body{
+  /* margin-bottom: 25px; */
 }
 
 main ul{

@@ -48,6 +48,13 @@ Planet.prototype.renderPlanet = function() {
   infoElem.textContent = this.info;
   quizElem.innerHTML = '';
   quizResultsElem.innerHTML = '';
+  let buttonText = "";
+  if (this.name !== 'Uranus') {
+    buttonText = `Start ${this.name}'s Quiz`;
+  } else {
+    buttonText = `Start ${this.name}' Quiz`;
+  }
+  buttonElem.value = buttonText;
 }
 
 // loading function 

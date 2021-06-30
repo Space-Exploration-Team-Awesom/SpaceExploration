@@ -146,8 +146,6 @@ mainElem.addEventListener('click', handleClick);
 
 buttonElem.addEventListener('click', handleButtonClick);
 
-
-
 // We're going to need some quiz code for multiple choice and text input (using forms and buttons)
 
 // function to create planets
@@ -172,8 +170,6 @@ function createPlanet() {
 
   new Planet('Pluto','./IMG/Pluto.png', [ `Pluto is the ninth object from the Sun, and is called a dwarf planet instead of a planet. It is named after the Roman god of the underworld. Pluto is made of ice and rock and is relatively small; it is one-sixth the mass of the Moon and one-third its volume. Pluto is so far away that light from the Sun takes 5.5 hours to reach it! Pluto has five known moons: Charon, Styx, Nix, Kerberos, and Hydra.`],[ "We're going to need some quiz code for multiple choice and text input (using forms and buttons)"]);
 }
-
-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
 
 function createQuiz() {
   new Quiz('Mercury', ["Question 1: What Roman god is the planet Merecury named after?","Question 2: If Earth is the 3rd planet away from the Sun, what position is Mercury?", "Question 3: What astronomical body does Mercury most look like?"], [[["a. The god of beauty","b. The god of war","c. The god of the underworld","d. The god of messengers"]],["a. 1st","b. 2nd","c. 4th","d. 5th"],["a. Venus","b. Earth","c. The Moon","d. Jupiter"]], ["a. 1st", "c. The Moon","d. The god of messengers"]);

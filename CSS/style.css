@@ -116,3 +116,29 @@ main ul img{
 #Mercury{
   background: url(/GIFS/mercury.gif) no repeat;
 }
+
+
+
+/* Use these too style radio buttons!*/
+input[class='radioButton']:after {
+  
+}
+
+input[class='radioButton']:checked:after {
+  
+}
+
+.answerText {
+  color: aquamarine;
+}
+.questionText {
+  color: greenyellow;
+}
+/* open quiz here */
+#button  {
+
+}
+/* submit */
+#submitQuiz {
+  
+}

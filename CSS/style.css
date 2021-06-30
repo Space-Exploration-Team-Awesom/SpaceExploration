@@ -77,8 +77,16 @@ main{
   color:white;
   margin-left:70%;
   margin-top:1.5%;
+  font-size: 1.3em;
 }
 
+#quiz-results{
+  display:block;
+  color:white;
+  margin-left:70%;
+  margin-top:1.5%;
+  font-size: 1.3em;
+}
 
 #planetImg{
   float:left;

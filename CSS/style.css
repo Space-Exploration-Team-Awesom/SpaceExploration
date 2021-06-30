@@ -82,21 +82,23 @@ main{
 #button{
   padding: 15px;
   font-size: 1.3em;
-  border-width: 1px;
+  border-width: 5px;
   border-radius: 15px;
   /* background-color: rgb(197, 107, 3); */
   background-color: rgb(103, 3, 197);
   color: white;
+  border-color:orange;
 }
 
 #submitQuiz{
   padding: 15px;
   font-size: 1.3em;
-  border-width: 1px;
+  border-width: 5px;
   border-radius: 15px;
   /* background-color: rgb(197, 107, 3); */
   background-color: rgb(103, 3, 197);
   color: white;
+  border-color:orange;
 }
 
 #planetImg{

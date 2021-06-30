@@ -1,9 +1,97 @@
+body {
+  background-image: url(/IMG/background\ 1.png);
+  background-size:cover;
+}
 
-img {
-  width: 300px;
+header{
+  display:flex;
+  justify-content: center;
+}
 
-img:nth-child(3){
-    width: 10%;
-    height: 10%;
+header nav{
+  margin-right:50%;
 
+}
+header nav ul{
+  width:3%;
+}
+header ul li{
+  display:inline-block;
+  margin-top:5%;
+
+}
+
+header ul li a{
+  /* padding-right: 5%; */
+  
+}
+
+
+main{
+  margin-top:-3%;
+}
+#planetName{
+  font-family: 'Monoton', cursive;
+  font-size: 5em;
+  color:white;
+  text-align: center;
+  background-image: 
+    linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;  
+  animation: move 120s linear infinite;
+  
+}
+@keyframes move {
+	to {
+		background-position: 4500vh;
+	}
+}
+
+#planetDiv{
+  position: absolute;
+  left:20em;
+   color:rgb(255, 255, 255);
+   /* background-color: white; */
+   width:49%;
+   height: 500px;
+  
+}  
+
+
+#planetImg{
+  float:left;
+  width:750px;
+  height:750px;
+  object-fit: contain;
+  -webkit-shape-outside:circle();
+  /* shape-outside:circle (); */
+  
+}
+
+#planetInfo{
+  font-size:1.3em;
+ 
+}
+main ul{
+  display:flex;
+  justify-content: space-between;
+  color:white;
+  margin-top:42%;
+  margin-bottom:2%;
+  padding-inline-start: 5%px;
+  padding-inline-end: 5%;
+
+}
+
+main ul img{
+  width:5%;
+  height:5%;
+  float:inherit;
+}
+
+
+
+#Mercury{
+  background: url(/GIFS/mercury.gif) no repeat;
 }

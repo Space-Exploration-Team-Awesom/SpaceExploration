@@ -75,9 +75,13 @@ Mars is the fourth planet from the Sun. It is the second-smallest planet in the 
 
 Question 1 - Text input field
 What Roman god is the planet Mars named after?
+1. The god of beauty
+2. The god of war
+3. The god of the underworld
+4. The god of messengers
 
 Question 2 - 
-If Earth is the 3rd planet away from the Sun, what position is Mercury?
+If Earth is the 3rd planet away from the Sun, what position is Mars?
 1. 1st
 2. 2nd
 3. 4th
@@ -114,7 +118,7 @@ Which of the following is one of Pluto's five moons?
 <!-- -------------------------- kyles addition below-------------- -->
 
 # Jupiter
-Jupitar named after the Roman god, the king of gods. This is due to the observed size. Primarily composed of hydrogen and a quarter made of helium, Jupitar has 2 and a half times the mass of all the other planets in our solar system combined. Jupitar does have rings around it, but its mostly known for its size. It is the fifth planet away from the Sun right before Saturn. Jupitar has 67 moons and has been visited seven times by spacecraft.
+Jupiter is named after the Roman god, the king of gods. This is due to the observed size. Primarily composed of hydrogen and a quarter made of helium, Jupitar has 2 and a half times the mass of all the other planets in our solar system combined. Jupitar does have rings around it, but its mostly known for its size. It is the fifth planet away from the Sun right before Saturn. Jupitar has 67 moons and has been visited seven times by spacecraft.
 
 Question 1 - 
 If Earth is the 3rd planet from the sun, how many planets away is Jupiter?

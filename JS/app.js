@@ -191,7 +191,7 @@ function createPlanet() {
 
   new Planet('Neptune','./IMG/Neptune.png', [`Named after the Roman god of the sea, Neptune is not visible to the naked eye.. Like Jupiter and Saturn Neptune's atmosphere is composed primarily of hydrogen and helium. Neptune is the farthest planet (#8) from the sun in our solar system. Seventeen times the mass of Earth, Neptune is the 4th largest planet by diameter and the third most massive planet. Winds have been recored up to 1,200mph on Neptune!`]);
 
-  new Planet('Pluto','./IMG/Pluto.png', [ `Pluto is the ninth object from the Sun, and is called a dwarf planet instead of a planet. It is named after the Roman god of the underworld. Pluto is made of ice and rock and is relatively small; it is one-sixth the mass of the Moon and one-third its volume. Pluto is so far away that light from the Sun takes 5.5 hours to reach it! Pluto has five known moons: Charon, Styx, Nix, Kerberos, and Hydra.`]);
+  new Planet('Pluto','./IMG/Pluto2.png', [ `Pluto is the ninth object from the Sun, and is called a dwarf planet instead of a planet. It is named after the Roman god of the underworld. Pluto is made of ice and rock and is relatively small; it is one-sixth the mass of the Moon and one-third its volume. Pluto is so far away that light from the Sun takes 5.5 hours to reach it! Pluto has five known moons: Charon, Styx, Nix, Kerberos, and Hydra.`]);
 }
 
 function createQuiz() {

@@ -177,7 +177,7 @@ input[class='radioButton']{
 }
 
 input[class='radioButton']:after {
-
+  background-color: #d1d3d1;
 }
 
 input[class='radioButton']:checked:after {

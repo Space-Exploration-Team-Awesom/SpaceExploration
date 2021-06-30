@@ -113,23 +113,27 @@ function handleButtonClick(event) {
 // read the values that were submitted with the form and compare them to our correct answer array
 function handleQuizSubmitClick() {
   let submitQuizElem = document.getElementById('submitQuiz');
-  alert('show answer');
+  
   // cycle through all the form inputs on the screen and compare the value of the selected to the answer array
     // grab the form inputs
     let answers = document.querySelectorAll('input:checked');
     console.log(answers);
     // compare them to the answer array
+    
     for (let question of quizArray) {
       if (currentPlanet.name === question.name) {
-        for (let i = 0; i < 1; i++) {
+        for (let i = 0; i < answers.length; i++) {
           console.log(question.correctAnswer[i]);
-          for (let j = 0; j < answers.length; j++) {
-            console.log(answers[j]);
-            if (answers[j].id === question.correctAnswer[j]) {
-              console.log('correct: ' + answers[j].id);
-            } else {
-              console.log('wrong: ' + answers[j].id);
-            }
+          if (answers[i].id === question.correctAnswer[i]) {
+            let resultsElem = document.createElement('p');
+            resultsElem.textContent = `Question ${i+1} is correct`
+            quizElem.appendChild(resultsElem);
+            
+          } else {
+            let resultsElem = document.createElement('p');
+            resultsElem.textContent = `Question ${i+1} is wrong and the answer is ${question.correctAnswer[i]}`
+            quizElem.appendChild(resultsElem);
+            
           }
         }
       }

@@ -11,11 +11,55 @@ body {
   align-items: center;
   background-image: url(/IMG/background\ 1.png);
   background-size:cover;
-  font-family: 'Monoton', cursive;
   font-size: 1em;
   color:white;
 }
+ header h1{
+  font-family: 'Monoton', cursive;
+  font-size: 5em;
+  margin-top:10%;
+  background-image: 
+    linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;  
+  animation: move 120s linear infinite;
+  
+}
+@keyframes move {
+	to {
+		background-position: 4500vh;
+	}
+}
+header nav{
+  text-align: center;
+}
 
+header nav a{
+  display:inline-flex;
+  padding-right:5%;
+  padding-left:5%;
+  font-size:2em;
+  font-family: 'Monoton', cursive;
+  color:white;
+  margin-top:2%;
+  margin-bottom:2%;
+}
+#intro{
+  display:flex;
+  justify-content:center;
+  
+
+}
+#textContent{
+  text-align: center;
+  border:teal solid 5px;
+  border-radius:10px;
+  width:40%;
+  height:auto;
+  font-family: 'Montserrat', sans-serif;
+  padding:1%;
+}
+ 
 .box {
   position: relative;
   z-index: -1;
@@ -62,6 +106,8 @@ body {
   justify-content: center;
   margin-left: 45%;
 }
+
+
 
 #starter{
   margin-left: 45%;

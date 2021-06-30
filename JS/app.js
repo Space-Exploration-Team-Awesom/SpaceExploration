@@ -82,6 +82,7 @@ function handleButtonClick(event) {
       for (let i = 0; i < question.quiz.length; i++) {
         let pElem = document.createElement('p');
         pElem.textContent = question.quiz[i];
+        pElem.className = 'questionText';
         quizElem.appendChild(pElem);
         console.log(question.answer);
         let formElem = document.createElement('form')
@@ -91,6 +92,8 @@ function handleButtonClick(event) {
           let labelElem = document.createElement('label');
           let brElem = document.createElement('br');
           answerElem.type = 'radio';
+          answerElem.className = 'radioButton';
+          labelElem.className = 'answerText';
           answerElem.id = question.answer[i][j];
           labelElem.textContent = question.answer[i][j];
           labelElem.for = question.answer[i][j];

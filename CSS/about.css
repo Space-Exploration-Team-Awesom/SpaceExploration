@@ -58,11 +58,12 @@ h1{
 
 #about-dev{
     display: flex;
-    /* justify-content: center; */
-    /* flex-flow: row; */
-    /* flex-wrap: wrap; */
+            /* justify-content: center; */
+            /* flex-flow: row; */
+            /* flex-wrap: wrap; */
     align-items: baseline;
 }
+
 
 div{
    float: left;

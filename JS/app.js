@@ -19,7 +19,8 @@ let quizArray = [];
 
 // counter for questions answered correctly
 let correct = 0;
-  
+let currentScore = JSON.stringify(correct);
+localStorage.setItem('currentScore', currentScore);
 
 // We need a planet constructor
 // takes in name, image, info about the planet, quiz questions (in an array)

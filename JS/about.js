@@ -23,26 +23,27 @@ Dev.prototype.render = function(){
     
     for(let i = 0; i < this.devArray.length; i++){       
         let dev = this.devArray[i].name;
-        let devDiv = document.createElement('div')
-        aboutDevSection.appendChild(devDiv)
+        let devSpan = document.createElement('span')
+        aboutDevSection.appendChild(devSpan)
+        devSpan.setAttribute('style', `--i:${i+1};`)
 
         //create header elem for each dev
         let nameElem = document.createElement('h2');
         nameElem.textContent = dev;
         //nameElem.className('dev-name');
-        devDiv.appendChild(nameElem);
+        devSpan.appendChild(nameElem);
 
         //create img elem for each dev
         let imgElem = document.createElement('img');
         imgElem.src = this.devArray[i].img;
         //imgElem.className('dev-img');
-        devDiv.appendChild(imgElem);
+        devSpan.appendChild(imgElem);
 
         //create bio elem for each dev
         let bioElem = document.createElement('p');
         bioElem.textContent = this.devArray[i].bio;
         //bioElem.className('dev-bio');
-        devDiv.appendChild(bioElem);
+        devSpan.appendChild(bioElem);
 
     }
 }

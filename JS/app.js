@@ -124,6 +124,11 @@ function handleButtonClick(event) {
   submitElem.addEventListener('click', handleQuizSubmitClick);
 }
 
+function getUserName() {
+  
+}
+
+
 // read the values that were submitted with the form and compare them to our correct answer array
 function handleQuizSubmitClick() {
   let submitQuizElem = document.getElementById('submitQuiz');

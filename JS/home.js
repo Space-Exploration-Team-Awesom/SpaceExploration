@@ -7,7 +7,7 @@ const planetElem = document.getElementById('startingPlanet');
 
 // add event listener for submitting user info
 
-userElem.addEventListener('submit', inputUserInfo);
+// userElem.addEventListener('submit', inputUserInfo);
 
 // add event listener for starting planet
 planetElem.addEventListener('submit', startingPlanet);
@@ -20,6 +20,7 @@ function inputUserInfo(event) {
   storeUserInfo(userName, age, favPlanet);
   event.target.reset();
 }
+// above function dosnt do anything at the moment
 
 // store results in local storage
 function storeUserInfo(name, age, planet) {
@@ -39,7 +40,6 @@ function startingPlanet(){
   localStorage.setItem('planet', planet);
   // linking to planet page
   console.log(planet);
-
 }
 
 // random index function
